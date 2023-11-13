@@ -1,5 +1,4 @@
-﻿using System.Threading.Channels;
-using detch_figt2._0;
+﻿using detch_figt2._0;
 
 Figter figter1 = new();
 figter1.name = "manemanet";
@@ -61,6 +60,8 @@ while (figter1.hp>0&&figter2.hp>0)
     }
     ChangeColor("");
     coice1 =0;
+    Console.ReadLine();
+    Console.Clear();
 }
 
 if (figter1.hp>0)

@@ -18,6 +18,14 @@ public class Figter
         }
         target.hp = Math.Max(0, target.hp);
         Console.WriteLine($"{name}deals:{damage} damage to {target.name} using {wapon.waponName}.");
+        if (Console.ForegroundColor == ConsoleColor.Green)
+        {
+            Console.ForegroundColor = ConsoleColor.Red;
+        }
+        else if (Console.ForegroundColor == ConsoleColor.Red)
+        {
+            Console.ForegroundColor = ConsoleColor.Green;
+        }
         Console.WriteLine($"{target.name} Shields: {blockedDamage} damage leaving {target.name} with: {target.hp} Health");
         if (target.shielding<0)
         {
